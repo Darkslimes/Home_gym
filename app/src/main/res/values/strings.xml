@@ -34,4 +34,6 @@
     <string name="passwordshield">*******</string>
     <string name="button">Button</string>
     <string name="title_activity_test">test</string>
+    <string name="nogi">text</string>
+    <string name="Legs" />
 </resources>

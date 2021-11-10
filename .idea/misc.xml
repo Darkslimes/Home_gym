@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/drawable/btn_lessons.xml" value="0.3828125" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/drawable/edittextbackground.xml" value="0.3828125" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/layout/activity_main.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/layout/activity_many_body.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/204/AndroidStudioProjects/Home_gym/app/src/main/res/menu/top_nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/froze/AndroidStudioProjects/Home_gym2/app/src/main/res/drawable/bot_navigation.xml" value="0.3828125" />
         <entry key="..\:/Users/froze/AndroidStudioProjects/Home_gym2/app/src/main/res/drawable/button_not_pressed.xml" value="0.3828125" />
         <entry key="..\:/Users/froze/AndroidStudioProjects/Home_gym2/app/src/main/res/drawable/button_pressed.xml" value="0.3828125" />

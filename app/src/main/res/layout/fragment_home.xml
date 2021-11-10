@@ -4,51 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2E70BE"
     tools:context=".ui.home.HomeFragment">
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="131dp"
-        android:background="@drawable/spine"
-        android:gravity="bottom"
-        android:paddingStart="17dp"
-        android:paddingEnd="15dp"
-        android:paddingBottom="10dp"
-        android:text="@string/spine"
-        android:textAllCaps="false"
-        android:textColor="#6E9CD2"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588"
-        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextContrastCheck" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="131dp"
-        android:background="@drawable/torso"
-        android:gravity="bottom"
-        android:paddingStart="17dp"
-        android:paddingEnd="15dp"
-        android:paddingBottom="10dp"
-        android:text="@string/torso"
-        android:textAllCaps="false"
-        android:textColor="#6E9CD2"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845"
-        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView25"
@@ -57,22 +13,23 @@
         android:text="@string/home_gym"
         android:textColor="@color/white"
         android:textSize="24sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view9"
         android:layout_width="373dp"
         android:layout_height="516dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="107dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/view_white"
         android:backgroundTint="@android:color/white"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -161,36 +118,87 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.214" />
 
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="wrap_content"
-        android:layout_height="131dp"
-        android:background="@drawable/muscule1"
-        android:gravity="bottom"
-        android:paddingStart="17dp"
-        android:paddingEnd="15dp"
-        android:paddingBottom="10dp"
-        android:text="@string/hands"
-        android:textAllCaps="false"
-        android:textColor="#6E9CD2"
-        android:textSize="18sp"
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="469dp"
+        android:layout_marginTop="119dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="@+id/view9"
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <View
-        android:id="@+id/view10"
-        android:layout_width="414dp"
-        android:layout_height="442dp"
-        android:background="@color/white"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="131dp"
+                android:background="@drawable/muscule1"
+                android:gravity="bottom"
+                android:paddingStart="17dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/hands"
+                android:textAllCaps="false"
+                android:textColor="#6E9CD2"
+                android:textSize="18sp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="131dp"
+                android:background="@drawable/torso"
+                android:gravity="bottom"
+                android:paddingStart="17dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/torso"
+                android:textAllCaps="false"
+                android:textColor="#6E9CD2"
+                android:textSize="18sp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="131dp"
+                android:background="@drawable/spine"
+                android:gravity="bottom"
+                android:paddingStart="17dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/spine"
+                android:textAllCaps="false"
+                android:textColor="#6E9CD2"
+                android:textSize="18sp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="131dp"
+                android:background="@drawable/nogi"
+                android:gravity="bottom"
+                android:paddingStart="17dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/Legs"
+                android:textAllCaps="false"
+                android:textColor="#6E9CD2"
+                android:textSize="18sp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
