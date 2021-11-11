@@ -1,14 +1,22 @@
 package com.example.home_gym;
 
 import android.content.Intent;
+import android.graphics.ImageDecoder;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.WebView;
 import android.widget.Button;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.VideoView;
+
 import java.text.SimpleDateFormat;
 
 public class stopwatch extends AppCompatActivity {
@@ -35,6 +43,7 @@ public class stopwatch extends AppCompatActivity {
                 TimerMethod();
             }
         },0,1000);
+
     }
     private void TimerMethod(){
         this.runOnUiThread(Timer_Tick);
@@ -55,6 +64,7 @@ public class stopwatch extends AppCompatActivity {
 
         if(myTimer != null) myTimer.cancel();
         start.setClickable(true);
+
     }
     public void Reset (View view)
     {
@@ -67,4 +77,5 @@ public class stopwatch extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
 }
